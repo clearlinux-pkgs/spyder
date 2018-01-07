@@ -4,7 +4,7 @@
 #
 Name     : spyder
 Version  : 3.2.5
-Release  : 1
+Release  : 2
 URL      : https://pypi.python.org/packages/b9/0f/dbdd4390adf85239e16eec1821b74389604163132f8e47aa2a9c6569d4a8/spyder-3.2.5.tar.gz
 Source0  : https://pypi.python.org/packages/b9/0f/dbdd4390adf85239e16eec1821b74389604163132f8e47aa2a9c6569d4a8/spyder-3.2.5.tar.gz
 Summary  : Scientific PYthon Development EnviRonment
@@ -14,6 +14,7 @@ Requires: spyder-bin
 Requires: spyder-python3
 Requires: spyder-data
 Requires: spyder-python
+Requires: PyQt5
 Requires: Pygments
 Requires: QtAwesome
 Requires: QtPy
@@ -31,6 +32,7 @@ Requires: pylint
 Requires: pyzmq
 Requires: qtconsole
 Requires: rope
+BuildRequires : PyQt5
 BuildRequires : Pygments
 BuildRequires : QtAwesome
 BuildRequires : QtPy
@@ -101,7 +103,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1515337854
+export SOURCE_DATE_EPOCH=1515342636
 python3 setup.py build -b py3
 
 %install
